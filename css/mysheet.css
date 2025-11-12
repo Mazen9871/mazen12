@@ -1,0 +1,266 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+background-color: #F4F4F4; 
+color: #000000; 
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #006C35;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.365);
+    margin-bottom: 10px;
+    padding:2px;
+    position: relative;
+   
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+    nav li {
+    margin: 0;
+}
+nav a {
+    display: inline-block;
+    padding: 0.45rem 0.85rem;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 6px;
+    transition: background-color 160ms ease, transform 120ms ease, color 160ms ease;
+         cursor: pointer;
+
+}
+nav a:hover{
+    background: #004a25;
+    transform: translateY(-2px);
+}
+
+nav img{
+    width: 100px;
+    height: 80px;
+    border-radius: 30%;
+    margin-right: 15px;
+    align-items: left;
+}
+.footer {
+    background-color: #006C35;
+    color: white;
+    text-align: center;
+    padding: 20px ;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.365);
+    margin-top: auto;
+    
+}
+
+
+.banner {
+    height: 400px; 
+    background-image: url('../images/backof2030.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+main h2, main p {
+    text-align: center;
+    color: #000000; 
+}
+
+
+.project-buttons {
+    text-align: center; 
+    margin-bottom: 25px; 
+}
+.project-buttons button {
+    font-size: 16px;        
+    font-weight: bold;       
+    padding: 10px 20px;     
+    margin: 5px;            
+    border: none;           
+    border-radius: 5px;    
+    background-color: #006C35; 
+    color: white;            
+    cursor: pointer;      
+    transition: background-color 0.3s; 
+}
+.project-buttons button:hover {
+    background-color: #004a25;
+}
+
+
+
+#project-content-container {
+    width: 80%;              
+    margin: 20px auto;       
+    padding: 25px;           
+    
+  
+    background-color: rgba(255, 255, 255, 0.95); 
+    color: #333;             
+    
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+    
+   
+    text-align: right;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+#project-content-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px; 
+}
+
+
+.mood-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.203);
+    padding: 10px 15px;
+    border-radius: 60px;
+    font-size: 25px;
+         cursor: pointer;
+
+}
+
+
+body.dark-mode {
+    background-color: #121212; 
+    color: #eeeeee; 
+}
+body.dark-mode #project-content-container {
+    background-color: rgba(30, 30, 30, 0.95); 
+    color: #eeeeee; 
+    border-color: #444;
+}
+
+body.dark-mode main h2, body.dark-mode main p {
+    color: #eeeeee; 
+}
+.cta-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 335px; /* This moves the button down */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 16px 32px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #006C35;
+    border: 2px solid white;
+    border-radius: 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    background-color: #004a25;
+}
+.about{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    background-color: rgba(1, 1, 255, 0.632);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+.about img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+}   
+.about:hover{
+    transform: translateY(-5px);
+}
+.about ul{
+    list-style:disc;
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.about h2{
+    margin-top: 20px;
+    font-size: 24px;
+text-align: center;
+    list-style: none;
+}
+.about a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.container {
+    display: flex;
+    justify-content: center;
+   display: space-evenly;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 90%;
+    margin: 20px auto;
+    flex-wrap: wrap;
+
+}
+.contact {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    background-color: rgba(108, 117, 211, 0.084);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.contact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #006C35;
+}
+
+
+
